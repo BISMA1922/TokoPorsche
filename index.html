@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Showroom Porsche</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site">
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#home">Porsche<span class="brand-dot">Pamoelank</span></a>
+
+        <input id="nav-toggle" class="nav-toggle" type="checkbox" />
+        <label for="nav-toggle" class="hamburger" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#pricelist">Pricelist</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="cart-btn" id="cartBtn" aria-label="Cart">
+          <svg viewBox="0 0 24 24" class="cart-ico" aria-hidden="true"><path d="M7 4h-2l-1 2h2l1-2zm0 0h10l1.5 6H8.5L7 4zM6 10h12l-1.2 6.1A2 2 0 0 1 14.9 18H9.1a2 2 0 0 1-1.9-1.9L6 10z"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+
+      <div class="nav-dropdown" aria-hidden="true">
+        <ul>
+          <li><a href="#home" class="nav-item">Home</a></li>
+          <li><a href="#gallery" class="nav-item">Gallery</a></li>
+          <li><a href="#pricelist" class="nav-item">Pricelist</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section id="home" class="section">
+        <div class="card hero-card">
+          <div class="slider">
+
+            <input type="radio" name="s" id="s1" checked>
+            <input type="radio" name="s" id="s2">
+            <input type="radio" name="s" id="s3">
+
+            <div class="slides">
+              <figure class="slide">
+                <img src="porsche8.jpg" alt="Porsche Cayenne">
+                <figcaption class="caption">
+                  <h1>The New Cayenne Electric</h1>
+                  <p>World Premiere</p>
+                </figcaption>
+              </figure>
+
+              <figure class="slide">
+                <img src="porsche9.jpg" alt="Porsche 911 Turbo S">
+                <figcaption class="caption">
+                  <h1>Porsche 911 Turbo S</h1>
+                  <p>Pure Excellence</p>
+                </figcaption>
+              </figure>
+
+              <figure class="slide">
+                <img src="porsche8.jpg" alt="Porsche Macan">
+                <figcaption class="caption">
+                  <h1>The New Macan</h1>
+                  <p>Electrified Future</p>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="dots">
+              <label for="s1" class="dot" title="Slide 1"></label>
+              <label for="s2" class="dot" title="Slide 2"></label>
+              <label for="s3" class="dot" title="Slide 3"></label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card history-card">
+          <div class="card-inner">
+            <h2>Sejarah Porsche</h2>
+
+            <p>
+              Porsche adalah merek otomotif Jerman yang telah memproduksi mobil selama lebih dari 80 tahun.
+              Didirikan pada tahun 1931 oleh Ferdinand Porsche, perusahaan ini memiliki sejarah panjang dalam
+              hal keunggulan teknik, inovasi, dan komitmen terhadap kinerja.
+            </p>
+
+            <p>
+              Mobil pertama perusahaan tersebut, Porsche 64, diproduksi pada tahun 1938 dan didasarkan pada
+              platform Volkswagen Beetle. Mobil ini awalnya dibuat untuk balapan Berlin–Roma, namun kompetisi
+              tersebut dibatalkan akibat pecahnya Perang Dunia II. Hanya tiga unit Porsche 64 yang pernah dibuat.
+            </p>
+
+            <p>
+              Setelah perang usai, Porsche mulai memproduksi mobil sport seperti Porsche 356, yang segera
+              mendapatkan reputasi tinggi berkat performa dan keunggulan tekniknya. Model ini memantapkan
+              Porsche sebagai pemain utama di industri otomotif dan memperkuat fokus perusahaan pada
+              kendaraan berperforma tinggi serta dunia balap.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="card">
+          <div class="card-inner">
+            <h2>Gallery</h2>
+            <div class="grid">
+              <article class="card small-card">
+                <img src="porsche2.webp" alt="Model 1">
+                <div class="card-content">
+                  <p>Porsche Model 1</p>
+                </div>
+              </article>
+
+              <article class="card small-card">
+                <img src="porsche3.webp" alt="Model 2">
+                <div class="card-content">
+                  <p>Porsche Model 2</p>
+                </div>
+              </article>
+
+              <article class="card small-card">
+                <img src="porsche4.webp" alt="Model 3">
+                <div class="card-content">
+                  <p>Porsche Model 3</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricelist" class="section">
+        <div class="card">
+          <div class="card-inner">
+            <h2>Pricelist</h2>
+
+            <div class="grid">
+              <article class="price-card">
+                <div class="price-thumb">
+                  <img src="porsche5.png" alt="Cayenne">
+                  <button class="add-cart" data-model="Cayenne">🛒</button>
+                </div>
+                <div class="card-content">
+                  <p class="model">Cayenne</p>
+                  <p class="price">$85,000</p>
+                </div>
+              </article>
+
+              <article class="price-card">
+                <div class="price-thumb">
+                  <img src="porsche6.jpg" alt="Panamera">
+                  <button class="add-cart" data-model="Panamera">🛒</button>
+                </div>
+                <div class="card-content">
+                  <p class="model">Panamera</p>
+                  <p class="price">$92,000</p>
+                </div>
+              </article>
+
+              <article class="price-card">
+                <div class="price-thumb">
+                  <img src="porsche7.jpg" alt="911 GT3">
+                  <button class="add-cart" data-model="911 GT3">🛒</button>
+                </div>
+                <div class="card-content">
+                  <p class="model">911 GT3</p>
+                  <p class="price">$161,000</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="card contact-card">
+          <div class="card-inner split">
+            <div class="contact-info">
+              <h2>Contact Us</h2>
+              <p class="lead">Pertanyaan service, booking, atau info model — kami siap membantu dengan layanan premium.</p>
+
+              <ul class="contact-list">
+                <li><strong>Email:</strong> porsche@pamulang.com</li>
+                <li><strong>Phone:</strong> 0812 3456 7890</li>
+                <li><strong>Address:</strong> Porsche Workshop, Tangsel</li>
+              </ul>
+            </div>
+
+            <form class="contact-form" action="#contact" onsubmit="event.preventDefault(); showToast('Pesan terkirim — terima kasih!')">
+              <label>
+                <span>Nama</span>
+                <input type="text" class="input" name="name" required placeholder="Nama lengkap">
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input type="email" class="input" name="email" required placeholder="email@domain.com">
+              </label>
+
+              <label>
+                <span>Pesan</span>
+                <textarea class="textarea" name="message" required placeholder="Tulis pesan Anda..."></textarea>
+              </label>
+
+              <button class="btn btn-primary" type="submit">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
+
+  </div>
+
+  <script>
+    (function () {
+      const cartCountEl = document.getElementById('cartCount');
+      const cartBtn = document.getElementById('cartBtn');
+      const toast = document.getElementById('toast');
+      let cartCount = 0;
+
+      document.querySelectorAll('.add-cart').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const model = btn.dataset.model || 'Item';
+          cartCount += 1;
+          cartCountEl.textContent = cartCount;
+          showToast(model + " dimasukkan ke keranjang");
+t
+          cartBtn.classList.add('pulse');
+          setTimeout(() => cartBtn.classList.remove('pulse'), 600);
+          e.stopPropagation();
+        });
+      });
+
+      window.showToast = function (msg = '') {
+        toast.textContent = msg;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 3200);
+      };
+    })();
+  </script>
+</body>
+</html>
